@@ -15,7 +15,9 @@ main ul {
     padding-bottom: 1rem;
 }
 
-body {}
+body {
+    scroll-behavior: smooth;
+}
 
 header h1 {
     font-family: 'Babylonica', cursive;
@@ -84,17 +86,16 @@ header .nav-logo span {
 
 }
 
-main img {
+main .image {
     display: inline-block;
-    width: 250px;
-    height: 250px;
+    overflow: hidden;
+    width: 300px;
     display: grid;
     place-content: right;
     background: rgb(1, 22, 53);
     color: rgb(78, 125, 167);
-    border-radius: 100%;
+    border-radius: 200px;
     border-right: 2rem;
-    margin-left: 75%;
 
 }
 
@@ -103,12 +104,20 @@ main img {
     align-items: center;
     margin-top: 5%;
     color: rgb(77, 102, 214);
-    border-radius: 100%;
-    border-right: 2rem;
+
+    gap: 2rem;
 }
 
-.image2 {
+.about .container {
     display: flex;
-    color: rgb(214, 77, 191);
-    align-items: start;
+    gap: 2rem;
+}
+
+.about .container .image2 img {
+    width: 250px;
+    height: 400px;
+}
+
+.about .container .content {
+    gap: 3rem;
 }
